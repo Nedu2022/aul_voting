@@ -1,5 +1,5 @@
 import Person from "../Person/Person";
-import data from "../..";
+import data from "../../index";
 
 const President = () => {
   // Filter data for contestants with the post "President"
@@ -12,6 +12,7 @@ const President = () => {
         {presidents.map((person, index) => (
           <div key={person.id} className="flex items-center space-x-4">
             <Person
+              id={person.id} 
               name={person.name}
               post={person.post}
               level={person.level}

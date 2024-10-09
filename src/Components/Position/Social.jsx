@@ -10,6 +10,7 @@ const Secretary = () => {
         {social.map((person, index) => (
           <div key={person.id} className="flex items-center space-x-4">
             <Person
+             id={person.id} 
               name={person.name}
               post={person.post}
               level={person.level}

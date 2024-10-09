@@ -1,7 +1,7 @@
 import Person from "../Person/Person";
 import data from "../..";
 
-const President = () => {
+const VPresident = () => {
   // Filter data for contestants with the post "President"
   const vpresidents = data.filter((person) => person.post === "Vice President");
 
@@ -12,6 +12,7 @@ const President = () => {
         {vpresidents.map((person, index) => (
           <div key={person.id} className="flex items-center space-x-4">
             <Person
+             id={person.id} 
               name={person.name}
               post={person.post}
               level={person.level}
@@ -31,4 +32,4 @@ const President = () => {
   );
 };
 
-export default President;
+export default VPresident;
